@@ -1,13 +1,802 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+/* navbar css */
+.navbar-brand{
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-right: 2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar li{
+  padding: 0 1rem;
 }
+
+.navbar li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: grey;
+}
+
+.navbar li a:hover{
+  color: red !important;
+}
+
+.btn-style{
+  width: 15rem;
+  margin-right: 4rem;
+  color: aliceblue;
+  background-color: rgb(44, 42, 42);
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-style:hover{
+  background: red;
+}
+
+.nav-img{
+  height: 2.5rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-left: 4rem;
+  margin-top: -10px;
+}
+
+/* header css */
+
+.main-header{
+  height: 100vh;
+  margin-bottom: 4rem;
+}
+
+.right-side{
+  overflow: hidden;
+}
+
+.left-side{
+  justify-content: center;
+  margin-top: 17rem;
+}
+
+.main-heading{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-para{
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter !important;
+  color: grey;
+}
+
+.img{
+  margin-bottom: 1rem;
+  height: 24rem;
+  width: 17rem;
+  border-radius: 1rem;
+
+}
+
+/* service section css */
+
+.service{
+  height: 100vh;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-para{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 2rem;
+  color: gray;
+  padding-top: 2rem;
+}
+
+.service-heading{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.service-container{
+  height: 18rem;
+  width: 22rem;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 2rem;
+  margin: auto;
+  background-color: #f6f7f8;
+}
+
+.service-img{
+  height: 4rem;
+  width: 4.2rem;
+  border-radius: 50%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.service-img:hover{
+  transform: scale(1.1);
+}
+
+.service-title{
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.service-parag{
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  padding: 5px;
+  text-align: center;
+}
+
+.service-headingg{
+  margin-top: 4rem;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.service-logo-container{
+  display: flex;
+  justify-content: center;
+}
+
+.service-logo{
+  height: 11rem;
+  width: 15rem;
+  padding: 2rem 2rem;
+  cursor: pointer;
+}
+
+.service-logo:hover{
+  transform: scale(1.1);
+}
+
+/* team section css */
+
+.team{
+  background-color: #f6f7f8;
+  height: 70vh;
+  width: 100%;
+}
+
+.team-para{
+  margin-left: 2rem;
+  color: grey;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.team-heading{
+  margin-left: 2rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 2%;
+}
+
+.team-container{
+  height: 17rem;
+  width: 20rem;
+  justify-content: center;
+  margin: auto;
+  padding: 4px 4px;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0px 8px 0px 0px rgb(233, 228, 228);
+}
+
+/* client section css */
+
+.client{
+  background-color: #f6f7f8;
+  height: 60vh;
+  width: 100%;
+}
+
+.client-heading{
+  padding-top: 2rem;
+  margin-left: 2rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.client-container{
+  height: 14rem;
+  width: 42rem;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 4px 4px;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.client-img{
+  height: 5rem;
+}
+
+.client-para{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* stories section css */
+
+.stories{
+  height: 120vh;
+  width: 100%;
+}
+
+.stories-heading{
+  margin-top: 2rem;
+  text-transform: capitalize;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stories-para{
+  margin-top: 1rem;
+  text-transform: capitalize;
+  color: grey;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stories-container{
+  background-color: #f6f7f8;
+  border-radius: 2rem;
+  padding: 4px 4px;
+  height: 40rem;
+  width: 25rem;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.stories-img{
+  cursor: pointer;
+  width: 75%;
+  height: 60%;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  border-radius: 1rem;
+  margin-top: 1.2rem;
+}
+
+.visit-button{
+  background-color: rgb(44, 42, 42);
+  color: white;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  width: 5rem;
+  border: none;
+}
+
+.visit-button:hover{
+  background-color: red;
+}
+
+/* Project section css */
+
+.project{
+  background-color: #f6f7f8;
+  height: 120vh;
+  width: 100%;
+}
+
+.project-container{
+  background-color: white;
+  border-radius: 2rem;
+  padding: 4px 4px;
+  height: 40rem;
+  width: 25rem;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+/* footer section css */
+
+.footer-section{
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-group{
+  justify-content: center;
+  padding: 8px 8px;
+}
+
+.input-group-text{
+  color: aliceblue;
+  background-color: rgb(44, 42, 42);
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input-group-text:hover{
+  background-color: red;
+}
+
+.footer-para{
+  text-transform: capitalize;
+  color: grey;
+  font-size: small;
+}
+
+.footer-img{
+  height: 2.5rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-top: -10px;
+}
+
+.footer-icon{
+  margin: 1rem 0rem 1rem 1rem;
+}
+
+.footer-icon:hover{
+  color: red;
+  cursor: pointer;
+}
+
+/* singlestory section css */
+
+.single-sectiontwo{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.single-container{
+  margin-top: 4rem;
+  height: 80rem;
+  width: 60rem;
+}
+
+.single-img{
+  height: 40rem;
+  width: 38rem;
+  margin-top: 1rem;
+}
+
+.single-para{
+  color: grey;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+}
+
+.single-heading{
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.single-section{
+  height: 100vh;
+  width: auto;
+  background-color: #f6f7f8;
+}
+
+.single-headingone{
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 17rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.single-paraone{
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.single-imgone{
+  height: 40rem;
+  width: 40rem;
+  margin-top: 2rem;
+}
+
+/* project section css */
+
+.project-button{
+  color: aliceblue;
+  background-color: rgb(44, 42, 42);
+  border: none;
+  text-transform: uppercase;
+  margin: 2rem;
+  height: 3rem;
+  width: 8rem;
+  justify-content: center;
+}
+
+.project-button:hover{
+  background-color: rgb(249, 69, 99);
+}
+
+.project-headingone{
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 14rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.bold{
+  color: black;
+}
+
+.digi-img{
+  height: 45rem;
+  width: 48rem;
+  margin-top: 1rem;
+}
+
+/* responsive section css */
+
+@media only screen and (max-width: 378px) {
+  .right-side {
+    display: none;
+  }
+ .main-heading{
+  margin-top: -11rem;
+ }
+ .main-header{
+  height: 50vh;
+ }
+ .project{
+  height: 145rem;
+ }
+ .service{
+  height: 150rem;
+ }
+ .service-logo-container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  margin-left: 4rem;
+ }
+ .team{
+  height: 100rem;
+ }
+ .stories{
+  height: 142.2rem;
+ }
+ .client{
+  height: 55rem;
+ }
+ .client-container{
+  height: 20rem;
+ }
+ .client-img{
+  margin-left: 1rem;
+ }
+ .single-imgone{
+  height: 15rem;
+  width: 12rem;
+  margin-left: 6rem;
+ }
+ .single-section{
+  height: 50rem;
+ }
+ .single-container{
+  width: 20rem;
+  height: 60rem;
+ }
+ .digi-img{
+  display: none;
+ }
+ .single-img{
+  display: none;
+ }
+ .project-headingone{
+  margin-top: 4rem;
+ }
+ .single-headingone{
+  margin-top: 4rem;
+ }
+ .res-h{
+  display: none;
+ }
+}
+
+@media only screen and (max-width: 578px) {
+  .right-side {
+    display: none;
+  }
+ .main-heading{
+  margin-top: -11rem;
+ }
+ .main-header{
+  height: 50vh;
+ }
+ .project{
+  height: 145rem;
+ }
+ .service{
+  height: 150rem;
+ }
+ .service-logo-container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  margin-left: 4rem;
+ }
+ .team{
+  height: 100rem;
+ }
+ .stories{
+  height: 142.2rem;
+ }
+ .client{
+  height: 55rem;
+ }
+ .client-container{
+  height: 20rem;
+  width: 25rem;
+ }
+ .client-img{
+  margin-left: 1rem;
+ }
+ .single-imgone{
+  height: 15rem;
+  width: 12rem;
+  margin-left: 6rem;
+ }
+ .single-section{
+  height: 41rem;
+ }
+ .single-container{
+  width: 20rem;
+  height: 60rem;
+ }
+ .digi-img{
+  display: none;
+ }
+ .single-img{
+  display: none;
+ }
+ .project-headingone{
+  margin-top: 4rem;
+ }
+ .single-headingone{
+  margin-top: 4rem;
+ }
+ .res-h{
+  display: none;
+ }
+}
+
+@media only screen and (max-width: 878px) {
+  .right-side {
+    display: none;
+  }
+ .main-heading{
+  margin-top: -11rem;
+ }
+ .main-header{
+  height: 25vh;
+ }
+ .project{
+  height: 100rem;
+ }
+ .service{
+  height: 110rem;
+ }
+ .service-logo-container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  margin-left: 18rem;
+  text-align: center;
+ }
+ .team{
+  height: 60rem;
+ }
+ .stories{
+  height: 100rem;
+ }
+ .client{
+  height: 32rem;
+ }
+ .client-container{
+  height: 20rem;
+  width: 22rem;
+ }
+ .client-img{
+  margin-left: 1rem;
+ }
+ .project-headingone{
+  margin-top: 4rem;
+ }
+ .single-imgone{
+  margin-left: 5.5rem;
+ }
+ .single-headingone{
+  margin-top: 4rem;
+ }
+ .single-section{
+  height: 57rem;
+ }
+ .res-h{
+  display: none;
+ }
+}
+
+@media only screen and (max-width: 788px) {
+  .right-side {
+    display: none;
+  }
+ .main-heading{
+  margin-top: -11rem;
+ }
+ .main-header{
+  height: 30vh;
+ }
+ .project{
+  height: 145rem;
+ }
+ .service{
+  height: 110rem;
+ }
+ .service-logo-container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  margin-left: 16rem;
+ }
+ .team{
+  height: 60rem;
+ }
+ .stories{
+  height: 142.2rem;
+ }
+ .client{
+  height: 55rem;
+ }
+ .client-container{
+  height: 20rem;
+  width: 25rem;
+ }
+ .client-img{
+  margin-left: 1rem;
+ }
+ .project-headingone{
+  margin-top: 4rem;
+ }
+ .single-imgone{
+  margin-left: 4.2rem;
+ }
+ .single-headingone{
+  margin-top: 4rem;
+ }
+ .single-section{
+  height: 57rem;
+ }
+ .res-h{
+  display: none;
+ }
+}
+
+
+@media only screen and (max-width: 978px) {
+  .main-heading{
+    margin-top: -11rem;
+   }
+  .right-side{
+    height: 50rem;
+  } 
+  .single-imgone{
+    margin-left: 8rem
+  }
+}
+
+@media only screen and (max-width: 1028px) {
+  .main-header{
+    height: 50rem;
+    width: auto;
+  }
+
+  .project{
+    height: 100rem;
+    width: auto;
+  }
+
+  .service{
+    height: 80rem;
+    width: 100%;
+  }
+
+  .team{
+    height: 60rem;
+    width: 100%;
+  }
+
+  .stories{
+    height: 100rem;
+  }
+
+  .client{
+    height: 45rem;
+  }
+  .single-section{
+     height: 45rem;
+  }
+}
+
+@media only screen and (max-width: 1287px) {
+  .service{
+    height: 70rem;
+  }
+  .client{
+    height: 45rem;
+  }
+}  
+
+@media only screen and (max-width: 287px) {
+ .navbar-brand{
+  font-size: small;
+ }
+ .nav-img{
+  height: 2rem;
+  width: 2rem;
+ }
+ .main-header{
+  height: 20rem;
+ }
+ .project{
+  height: 145rem;
+ }
+ .service{
+  height: 150rem;
+ }
+ .service-logo-container{
+  margin-left: 1rem;
+ }
+ .team{
+  height: 100rem;
+ }
+ .stories{
+  height: 148rem;
+ }
+ .client{
+  height:60rem;
+ }
+ .single-imgone{
+  margin-left: 2.8rem;
+ }
+ .project-button{
+  margin-top: 1rem;
+ }
+ .project-headingone{
+  margin-top: 1rem;
+ }
+} 
